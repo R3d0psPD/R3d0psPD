@@ -1,4 +1,6 @@
-<iframe src="https://r3d0pspd.github.io/R3d0psPD/" width="100%" height="830px" style="border:none; border-radius:34px; background:transparent;"></iframe>
+<p align="center">
+  <img src="R3d0psPD.gif" alt="R3d0psPD Animated Hacker Banner" width="100%">
+</p>
 
 ---
 
