@@ -49,8 +49,8 @@
 <br clear="both">
 
 <div data-importer="stats" align="center">
-  <img src="https://raw.githubusercontent.com/R3d0psPD/test-profile/activity-graph-output/activity-graph.svg" alt="activity graph" />
-  <img src="https://raw.githubusercontent.com/R3d0psPD/test-profile/stats-output/stats.svg" alt="stats graph" />
+  <img src="https://raw.githubusercontent.com/R3d0psPD/R3d0psPD/master/profile-summary-card-output/themes/github_dark/0-profile-details.png" alt="stats graph" height="220" />
+  <img src="https://raw.githubusercontent.com/R3d0psPD/R3d0psPD/master/profile-summary-card-output/themes/github_dark/1-repos-per-language.png" alt="activity graph" height="220" />
   <img src="https://streak-stats.demolab.com?user=R3d0psPD&locale=en&mode=daily&theme=chartreuse-dark&hide_border=false&border_radius=5&order=3" height="220" alt="streak graph"  />
 </div>
 
@@ -73,8 +73,8 @@
   <a href="https://www.instagram.com/r3d0pspd/?hl=en" target="_blank" rel="noopener noreferrer" style="display: inline-block;">
     <img src="https://img.icons8.com/color/96/000000/instagram-new.png" alt="Instagram" width="50" height="50" style="border-radius: 10px; object-fit: contain;" />
   </a>
-  <a href="https://www.threads.com/@r3d0pspd" target="_blank" rel="noopener noreferrer" style="display: inline-block;">
-    <img src="https://cdn.simpleicons.org/threads/000000" alt="Threads" width="50" height="50" style="border-radius: 10px; object-fit: contain;" />
+  <a href="https://www.threads.net/@r3d0pspd" target="_blank" rel="noopener noreferrer" style="display: inline-block;">
+    <img src="https://cdn.simpleicons.org/threads/ffffff" alt="Threads" width="50" height="50" style="border-radius: 10px; object-fit: contain;" />
   </a>
   <a href="https://x.com/R3d0psPD" target="_blank" rel="noopener noreferrer" style="display: inline-block;">
     <img src="https://img.icons8.com/color/96/000000/twitter.png" alt="Twitter" width="50" height="50" style="border-radius: 10px; object-fit: contain;" />
@@ -95,13 +95,13 @@
 ---
 
 <p align="center">
-  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/R3d0psPD/test-profile/pacman-output/pacman-contribution-graph.svg">
+  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/R3d0psPD/R3d0psPD/ocean/github-contribution-grid-snake.svg">
 </p>
 
 ###
 
 <div data-importer="profile-views" align="center">
-  <img data-importer="profile-views" src="https://visitor-badge.laobi.icu/badge?page_id=R3d0psPD.test-profile&"  />
+  <img data-importer="profile-views" src="https://visitor-badge.laobi.icu/badge?page_id=R3d0psPD.R3d0psPD"  />
 </div>
 
 ###
