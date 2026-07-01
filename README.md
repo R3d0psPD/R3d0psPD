@@ -49,8 +49,8 @@
 <br clear="both">
 
 <div data-importer="stats" align="center">
-  <img src="https://raw.githubusercontent.com/R3d0psPD/R3d0psPD/master/profile-summary-card-output/themes/github_dark/0-profile-details.png" alt="stats graph" height="220" />
-  <img src="https://raw.githubusercontent.com/R3d0psPD/R3d0psPD/master/profile-summary-card-output/themes/github_dark/1-repos-per-language.png" alt="activity graph" height="220" />
+  <img src="https://raw.githubusercontent.com/R3d0psPD/R3d0psPD/activity-graph-output/activity-graph.svg" alt="activity graph" height="220" style="background: #0d1117; border-radius: 6px; padding: 5px;" />
+  <img src="https://raw.githubusercontent.com/R3d0psPD/R3d0psPD/stats-output/stats.svg" alt="stats graph" height="220" />
   <img src="https://streak-stats.demolab.com?user=R3d0psPD&locale=en&mode=daily&theme=chartreuse-dark&hide_border=false&border_radius=5&order=3" height="220" alt="streak graph"  />
 </div>
 
@@ -95,7 +95,7 @@
 ---
 
 <p align="center">
-  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/R3d0psPD/R3d0psPD/ocean/github-contribution-grid-snake.svg">
+  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/R3d0psPD/R3d0psPD/pacman-output/pacman-contribution-graph-dark.svg">
 </p>
 
 ###
