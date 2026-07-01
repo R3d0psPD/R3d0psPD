@@ -1,0 +1,535 @@
+title: "R3d0psPD Animated Hacker Banner"
+lang: en
+meta:
+  charset: UTF-8
+  viewport: width=device-width, initial-scale=1.0
+assets:
+  images:
+    hero: "R3d0psPD.png"
+    typing_svg: "https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=FF0000&center=true&vCenter=true&width=900&lines=🔥+Parthib+Dewanjee+(R3d0psPD)+🔥;%F0%9F%92%BB+Ethical+Hacker;🔴+Red+Team+Operator;🏁+CTF+Player;🪲+Bug+Bounty+Hunter"
+layout:
+  banner_container:
+    width: "min(1340px, 100%)"
+    min_height: 800px
+    border_radius: 34px
+    background:
+      - "radial-gradient(circle at 18% 28%, rgba(255, 0, 60, 0.14), transparent 24%)"
+      - "radial-gradient(circle at 82% 18%, rgba(255, 255, 255, 0.06), transparent 16%)"
+      - "linear-gradient(180deg, #090407 0%, #14030c 100%)"
+    border: "1px solid rgba(255, 0, 60, 0.22)"
+    box_shadow: "0 0 110px rgba(255, 0, 60, 0.16)"
+  header_bar:
+    headline: "STAY CURIOUS, STAY ETHICAL"
+    tip: "⚡Think like an attacker, act ethically"
+  panels:
+    - id: live_recon
+      title: "Live Recon"
+      type: terminal
+      lines:
+        - "INITIALIZING RECON MODULE..."
+        - "SCANNING TARGETS..."
+        - "ETHICAL MODE: ENABLED"
+        - "MISSION: SECURE A PROJECT"
+    - id: hero
+      title: "Hero"
+      type: hero
+      image: "R3d0psPD.png"
+      alt: "R3d0psPD"
+    - id: about_me
+      title: "About Me"
+      type: info
+      description: "I'm Parthib Dewanjee, an Ethical Hacker and Cybersecurity Enthusiast. I explore systems, find vulnerabilities, and help make the digital world a safer place."
+      badges:
+        - "🛠️ Penetration Testing"
+        - "🔴 Red Teaming"
+        - "🛡️ Security Research"
+    - id: bottom_banner
+      title: "Animated Title Banner"
+      type: banner
+      image: "https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=FF0000&center=true&vCenter=true&width=900&lines=🔥+Parthib+Dewanjee+(R3d0psPD)+🔥;%F0%9F%92%BB+Ethical+Hacker;🔴+Red+Team+Operator;🏁+CTF+Player;🪲+Bug+Bounty+Hunter"
+      alt: "Typing SVG"
+styles: |
+  :root {
+      --bg: #040305;
+      --surface: rgba(12, 6, 12, 0.92);
+      --border: rgba(255, 0, 60, 0.22);
+      --accent: #ff3047;
+      --accent-soft: rgba(255, 77, 95, 0.24);
+      --text: #f7f1f3;
+      --text-muted: rgba(247, 241, 243, 0.72);
+  }
+
+  * {
+      box-sizing: border-box;
+  }
+
+  html,
+  body {
+      margin: 0;
+      min-height: 100%;
+      background: var(--bg);
+  }
+
+  body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: var(--text);
+  }
+
+  .banner-container {
+      position: relative;
+      width: min(1340px, 100%);
+      min-height: 800px;
+      border-radius: 34px;
+      overflow: hidden;
+      background: radial-gradient(circle at 18% 28%, rgba(255, 0, 60, 0.14), transparent 24%),
+          radial-gradient(circle at 82% 18%, rgba(255, 255, 255, 0.06), transparent 16%),
+          linear-gradient(180deg, #090407 0%, #14030c 100%);
+      border: 1px solid var(--border);
+      box-shadow: 0 0 110px rgba(255, 0, 60, 0.16);
+  }
+
+  .banner-container::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: linear-gradient(to right, rgba(255, 0, 60, 0.05) 1px, transparent 1px),
+          linear-gradient(rgba(255, 0, 60, 0.05) 1px, transparent 1px);
+      background-size: 82px 82px;
+      opacity: 0.14;
+      pointer-events: none;
+  }
+
+  /* Canvas covers the banner for binary rain */
+  #binaryCanvas {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      z-index: 2;
+      pointer-events: none;
+      mix-blend-mode: screen;
+      opacity: 0.9;
+  }
+
+  .header-bar {
+      position: absolute;
+      top: 24px;
+      left: 32px;
+      right: 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 14px;
+      z-index: 6;
+      color: var(--text-muted);
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      font-size: 0.86rem;
+  }
+
+  .header-bar .headline {
+      color: var(--accent);
+      font-weight: 700;
+      letter-spacing: 0.28em;
+      text-transform: none;
+  }
+
+  .header-bar .tip {
+      text-align: right;
+  }
+
+  .layout-grid {
+      display: grid;
+      grid-template-columns: 340px minmax(420px, 1fr) 360px;
+      gap: 28px;
+      padding: 120px 38px 48px;
+      min-height: 740px;
+      position: relative;
+      z-index: 5;
+  }
+
+  .panel {
+      background: rgba(10, 6, 12, 0.88);
+      border: 1px solid rgba(255, 0, 60, 0.16);
+      box-shadow: 0 0 36px rgba(255, 0, 60, 0.08);
+      border-radius: 30px;
+      padding: 28px;
+  }
+
+  .panel h3 {
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: 0.24em;
+      color: var(--accent);
+      font-size: 0.92rem;
+  }
+
+  .status-list {
+      margin-top: 24px;
+      display: grid;
+      gap: 16px;
+  }
+
+  .status-item {
+      padding: 16px 18px;
+      border-radius: 22px;
+      background: rgba(255, 0, 60, 0.08);
+      border: 1px solid rgba(255, 0, 60, 0.1);
+  }
+
+  .status-item span {
+      display: block;
+      font-family: 'Fira Code', Consolas, monospace;
+      font-size: 0.95rem;
+      color: #fff;
+      line-height: 1.5;
+  }
+
+  .status-item strong {
+      color: #ff99a7;
+  }
+
+  .hero-panel {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 10px;
+  }
+
+  .hero-card {
+      position: relative;
+      width: 360px;
+      height: 420px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: none;
+      background: transparent;
+      box-shadow: none;
+  }
+
+  .hero-card::after {
+      display: none;
+  }
+
+  .hero-card img {
+      width: 100%;
+      height: auto;
+      max-height: 100%;
+      object-fit: contain;
+      object-position: center top;
+      display: block;
+      background: transparent;
+  }
+
+  .info-card {
+      background: rgba(7, 3, 8, 0.92);
+      border: 1px solid rgba(255, 0, 60, 0.14);
+      box-shadow: 0 0 28px rgba(255, 0, 60, 0.08);
+  }
+
+  .info-card h3 {
+      margin-bottom: 18px;
+      color: #ff293f;
+      letter-spacing: 0.2em;
+      font-size: 0.96rem;
+  }
+
+  .info-card p,
+  .info-card ul {
+      margin: 18px 0 0;
+      color: var(--text-muted);
+      line-height: 1.9;
+      font-size: 1rem;
+  }
+
+  .info-card p strong {
+      color: #fff;
+  }
+
+  .info-card ul {
+      padding-left: 22px;
+      list-style: none;
+  }
+
+  .info-card ul li {
+      position: relative;
+      padding-left: 22px;
+      margin-bottom: 12px;
+  }
+
+  .info-card ul li::before {
+      content: '▹';
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--accent);
+  }
+
+  .info-card .badge {
+      display: inline-block;
+      margin-top: 22px;
+      padding: 12px 16px;
+      border-radius: 18px;
+      border: 1px solid rgba(255, 0, 60, 0.16);
+      background: rgba(255, 0, 60, 0.06);
+      color: #fff;
+      font-size: 0.95rem;
+      font-weight: 700;
+  }
+
+  .info-card .badge ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+  }
+
+  .info-card .badge li {
+      margin: 0;
+      padding: 0;
+      white-space: nowrap;
+  }
+
+  .connect-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 24px;
+  }
+
+  .connect-row a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 56px;
+      height: 56px;
+      border-radius: 18px;
+      background: rgba(255, 0, 60, 0.08);
+      border: 1px solid rgba(255, 0, 60, 0.14);
+      box-shadow: 0 0 18px rgba(255, 0, 60, 0.08);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .connect-row a:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 24px rgba(255, 0, 60, 0.2);
+  }
+
+  .bottom-banner {
+      grid-column: 1 / -1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 18px;
+      margin-top: 18px;
+      padding: 18px 26px;
+      border-radius: 24px;
+      background: rgba(12, 6, 12, 0.72);
+      border: 1px solid rgba(255, 0, 60, 0.12);
+  }
+
+  .bottom-banner img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+  }
+
+  .bottom-banner span {
+      color: var(--text-muted);
+      font-size: 0.94rem;
+  }
+
+  .bottom-banner strong {
+      color: var(--accent);
+  }
+
+  .bottom-banner .bullet {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #ff3047;
+      box-shadow: 0 0 12px rgba(255, 48, 71, 0.4);
+  }
+
+  @keyframes spin {
+      0% {
+          transform: rotate(0deg);
+      }
+
+      100% {
+          transform: rotate(360deg);
+      }
+  }
+
+  /* Terminal / typing effect */
+  .live-terminal {
+      background: rgba(0, 0, 0, 0.35);
+      border-radius: 16px;
+      padding: 18px;
+      color: #b9f6ca;
+      font-family: 'Fira Code', Consolas, monospace;
+      font-size: 0.95rem;
+      line-height: 1.4;
+      border: 2px solid rgba(255, 0, 60, 0.16);
+      box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.45), 0 0 20px rgba(255, 0, 60, 0.02);
+      height: 370px;
+      overflow: hidden;
+  }
+
+  .live-terminal .terminal-body {
+      height: 315px;
+      overflow: hidden;
+      white-space: pre-wrap;
+  }
+
+  .live-terminal .terminal-body::-webkit-scrollbar {
+      display: none;
+  }
+
+  .live-terminal .line {
+      margin: 6px 0;
+      color: #c8ffd1;
+      word-break: break-word;
+  }
+
+  .live-terminal .prompt {
+      color: var(--accent);
+      font-weight: 700;
+      margin-right: 6px;
+  }
+
+  .live-terminal .terminal-input {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 8px;
+  }
+
+  .live-terminal .cursor {
+      color: var(--accent);
+      font-weight: 900;
+      animation: blink 1s steps(2, start) infinite;
+  }
+
+  @keyframes blink {
+      0% {
+          opacity: 1
+      }
+
+      50% {
+          opacity: 0
+      }
+
+      100% {
+          opacity: 1
+      }
+  }
+scripts:
+  - name: "Binary rain canvas animation"
+    description: "Animated binary rain overlay for the banner canvas."
+    code: |
+      (function () {
+          const canvas = document.getElementById('binaryCanvas');
+          const ctx = canvas.getContext('2d');
+
+          let width = 0;
+          let height = 0;
+          let columns = [];
+          const fontSize = 14;
+          const binaryChars = ['0', '1'];
+
+          function resize() {
+              const rect = canvas.getBoundingClientRect();
+              width = Math.max(300, Math.floor(rect.width));
+              height = Math.max(200, Math.floor(rect.height));
+              canvas.width = width * devicePixelRatio;
+              canvas.height = height * devicePixelRatio;
+              canvas.style.width = width + 'px';
+              canvas.style.height = height + 'px';
+              ctx.setTransform(devicePixelRatio, 0, 0, devicePixelRatio, 0, 0);
+
+              const cols = Math.floor(width / fontSize);
+              columns = new Array(cols).fill(0).map(() => ({ y: Math.random() * -1000 }));
+          }
+
+          function draw() {
+              ctx.fillStyle = 'rgba(4,3,5,0.18)';
+              ctx.fillRect(0, 0, width, height);
+
+              ctx.font = `${fontSize}px monospace`;
+              for (let i = 0; i < columns.length; i++) {
+                  const col = columns[i];
+                  const x = i * fontSize;
+                  const y = col.y * fontSize;
+
+                  ctx.fillStyle = 'rgba(255,80,100,0.95)';
+                  ctx.fillText(binaryChars[Math.floor(Math.random() * 2)], x, y);
+
+                  for (let t = 1; t < 6; t++) {
+                      const ty = y - t * fontSize;
+                      if (ty < 0) break;
+                      const alpha = Math.max(0, 0.7 - t * 0.12);
+                      ctx.fillStyle = `rgba(120,200,140,${alpha})`;
+                      ctx.fillText(binaryChars[Math.floor(Math.random() * 2)], x, ty);
+                  }
+
+                  col.y += 1;
+                  if (y > height + 0) {
+                      col.y = -50;
+                  }
+              }
+
+              requestAnimationFrame(draw);
+          }
+
+          resize();
+          window.addEventListener('resize', resize);
+          ctx.fillStyle = 'rgba(4,3,5,1)';
+          ctx.fillRect(0, 0, width, height);
+          requestAnimationFrame(draw);
+      })();
+  - name: "Typing effect for Live Recon"
+    description: "Typewriter effect for the live recon terminal lines."
+    code: |
+      (function () {
+          const lines = Array.from(document.querySelectorAll('.live-terminal .typed'));
+          const cursor = document.querySelector('.live-terminal .cursor');
+
+          let lineIndex = 0;
+          let charIndex = 0;
+
+          function typeStep() {
+              if (lineIndex >= lines.length) {
+                  setTimeout(() => {
+                      lines.forEach(l => l.textContent = '');
+                      lineIndex = 0; charIndex = 0;
+                      requestAnimationFrame(typeStep);
+                  }, 2500);
+                  return;
+              }
+
+              const el = lines[lineIndex];
+              const text = el.getAttribute('data-text') || '';
+
+              if (charIndex <= text.length) {
+                  el.textContent = text.slice(0, charIndex);
+                  charIndex++;
+                  setTimeout(typeStep, 45 + Math.random() * 40);
+              } else {
+                  lineIndex++;
+                  charIndex = 0;
+                  setTimeout(typeStep, 600 + Math.random() * 600);
+              }
+          }
+
+          setTimeout(typeStep, 800);
+      })();
